@@ -1,0 +1,35 @@
+<mat-sidenav-container autosize>
+  <mat-sidenav [opened]="true" mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home">
+        <span class="entry">
+          <mat-icon>house</mat-icon>
+          <span>Dashboard</span>
+        </span>
+      </a>
+      <a mat-list-item routerLink="/some-tabs/0">
+        <span class="entry">
+          <mat-icon>favorite</mat-icon>
+          <span>Tabs</span>
+        </span>
+      </a>
+      <a mat-list-item routerLink="/home">
+        <span class="entry">
+          <mat-icon>share</mat-icon>
+          <span>Link 3</span>
+        </span>
+      </a>
+        <mat-form-field (keyup.enter)="search()" class="test">
+        <mat-label>Sök bok</mat-label>
+        <input
+          matInput
+          [(ngModel)]="filterName"/>
+        </mat-form-field>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

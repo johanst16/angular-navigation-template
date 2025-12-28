@@ -1,0 +1,12 @@
+.example-container {
+  width: auto;
+  height: 100%;
+}
+
+.sidenav {
+  width: 160px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}

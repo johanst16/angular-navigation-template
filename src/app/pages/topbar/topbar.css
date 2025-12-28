@@ -1,0 +1,38 @@
+
+h1 {
+    padding: 0 1rem;
+}
+
+h2 {padding: 1rem;}
+
+mat-toolbar{
+    position:fixed;
+    top:0;
+    z-index: 2;
+    background-color: #1976d2;
+    color: white;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.eject-icon {
+    color: white;
+    /* transform: rotate(180deg); */
+    font-size: 50px;
+    height: 50px ;
+    width: 50px ;
+}
+
+.test {
+    color: white;
+    font-size: 20px;
+    width: 12%;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+
+
+

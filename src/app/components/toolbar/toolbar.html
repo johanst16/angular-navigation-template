@@ -1,0 +1,47 @@
+<header class="top-bar">
+  <div class="grid grid-cols-4 gap-2">
+    <!--  1 -->
+    <!--  2 -->
+  <div class="">
+    <span>
+      <mat-icon class="eject-icon">eject</mat-icon>
+    </span>
+    <span class="text-xl">The Angular Navigation Template</span>
+
+  </div>
+    <!--  3 -->
+  <div>03</div>
+    <!--  4 -->
+  <div>
+    <mat-form-field (keyup.enter)="search()" class="float-right h-18 w-52">
+      <mat-label>Search</mat-label>
+      <input
+        matInput
+        [(ngModel)]="filterName"/>
+      <input matInput>
+    </mat-form-field>
+  </div>
+  <div>
+    <button matIconButton [matMenuTriggerFor]="menu" class="float-right ms-8"
+        aria-label="Example icon-button with a menu">
+      <mat-icon class="white-icon">more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+
+<!--    <a href="/home" class="float-right">Home</a>  -->
+  </div>
+</div>
+</header>

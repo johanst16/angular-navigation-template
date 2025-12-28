@@ -1,0 +1,35 @@
+<div class="container">
+<p class="font-sans text-center text-xl">{{filtername}}</p>
+<mat-tab-group>
+  <mat-tab #first label="First">
+
+    <form [formGroup]="profileForm">
+    	<mat-form-field class="full-width">
+		    <input matInput #myInput id="myInput" formControlName="myInput" value="{{filtername}}" placeholder="Focused Input">
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" (click)="focusMyInput()">Focus</button>
+
+      <mat-form-field class="w-lg">
+        <mat-label>Toppings</mat-label>
+        <mat-select [formControl]="toppings" multiple>
+          @for (topping of toppingList; track topping) {
+            <mat-option [value]="topping">{{topping}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+
+    </form>
+
+  </mat-tab>
+  <mat-tab label="Second">
+
+    <app-example-form />
+
+  </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+
+</div>
+
+

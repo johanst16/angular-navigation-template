@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <span>
+    <mat-icon class="eject-icon">eject</mat-icon>
+  </span>
+  <h1>The Angular Navigation Template</h1>
+  <span class="example-spacer"></span>
+
+  <mat-form-field (keyup.enter)="search()" class="test">
+    <mat-label>Search</mat-label>
+    <input
+      matInput
+      [(ngModel)]="filterName"/>
+  </mat-form-field>
+
+  <!--
+  <button matIconButton class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+-->
+
+    <button matIconButton [matMenuTriggerFor]="menu" class="float-right ms-8"
+        aria-label="Example icon-button with a menu">
+      <mat-icon class="white-icon">more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+
+</mat-toolbar>
