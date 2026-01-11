@@ -2,6 +2,12 @@ mat-sidenav-container {
     height:100%;
 }
 
+.active-link {
+  background-color: #E7E5E4; /* Example active background */
+  color: #007bff;           /* Example active text color */
+}
+
+
 mat-sidenav {
     padding-top: 3.5rem;
     @media screen and (min-width: 600px) {

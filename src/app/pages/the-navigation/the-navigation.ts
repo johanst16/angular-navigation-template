@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
-import { RouterLink, RouterOutlet } from "@angular/router";
+import { RouterLink, RouterOutlet, RouterLinkActive } from "@angular/router";
 import { MatFormField } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { FormControl, FormsModule } from '@angular/forms';
@@ -13,7 +13,7 @@ import {MatInputModule} from '@angular/material/input';
   selector: 'app-the-navigation',
   imports: [MatSidenavModule, MatListModule,
             MatIconModule, RouterOutlet,
-            RouterLink, MatFormField,
+            RouterLink, RouterLinkActive, MatFormField,
             MatFormFieldModule, FormsModule,
           MatInputModule],
   templateUrl: './the-navigation.html',
